@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Undertale SMS">
+<link rel="manifest" href="manifest.json">
   <title>Undertale SMS Fake Messages</title>
 
   <style>
@@ -145,8 +150,6 @@
       align-items: center;
       z-index: 999;
     }
-  .fullscreen .phone {
-  height: 100vh;
 }
     /* ========================= */
     /* FULLSCREEN SMS INPUT BAR */
@@ -199,6 +202,20 @@
   font-family: 'Determination', monospace;
   padding: 2px 6px;
   display: none;
+}
+.fullscreen {
+  padding: 0;
+}
+
+.fullscreen .phone {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
 }
   </style>
 </head>
